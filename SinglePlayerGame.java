@@ -13,6 +13,7 @@ public class SinglePlayerGame extends AbstractGame implements Playable {
 
     @Override
     public void trackProgress() {
+        System.out.println("Game Title: " + title);
         System.out.println("Levels completed: " + levelsCompleted);
     }
 }
