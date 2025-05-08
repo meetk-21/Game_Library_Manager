@@ -38,4 +38,7 @@ public class MultiplayerGame extends AbstractGame implements Playable {
     public void setLosses(int losses) {
         this.losses = losses;
     }
+    // public void recordLoss() {
+    //     losses++;
+    // }
 }
