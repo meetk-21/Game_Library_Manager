@@ -1,9 +1,9 @@
 public abstract class AbstractGame {
-    private String title;
-    private String genre;
-    private String platform;
-    private int releaseYear;
-    private String developer;
+    protected String title;
+    protected String genre;
+    protected String platform;
+    protected int releaseYear;
+    protected String developer;
 
     public AbstractGame(String title, String genre, String platform, int releaseYear, String developer) {
         this.title = title;
@@ -53,6 +53,14 @@ public abstract class AbstractGame {
         this.developer = developer;
     }
     
-    public abstract void updateProgress();
+    public void printGameDetails() {
+        System.out.println("------------------------------");
+        System.out.println(title);
+        System.out.println(genre);
+        System.out.println("------------------------------");
 
+    }
+
+    public abstract void updateProgress();
+   
 }
